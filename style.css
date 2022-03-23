@@ -1,0 +1,227 @@
+@charset "utf-8";
+/* CSS Document */
+	@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,700;1,500;1,700&display=swap');	
+
+	body {
+		color: darkslateblue;
+		background-color:white; 
+		background-image: url("Images/Fondo.jpg"); background-size:contain; background-attachment: fixed; background-position: bottom; background-repeat: no-repeat;
+		font-family: 'Raleway', sans-serif;
+	} 
+
+	#cabecera {
+		background-image: url("Images/Header.jpg"); background-repeat: no-repeat; background-size:contain; width: 100%; height: auto; margin-top: -1px;
+	}
+
+	#imgHeader{
+		opacity: 0; width: 100%;
+	}
+
+	header {
+		color:steelblue; background-color:#FFB52E; font-family:'Times New Roman', Times, serif; font-size:25px; min-height:60px; height:auto; width:100%; padding-left: 2%; padding-right: 1%; position:sticky; box-shadow: 0px 3px 7px #a8becb; top:0;
+		margin: 0px; z-index: 1; 
+	}
+
+	.menu_title {
+		float: left; margin: 0px; position: absolute;
+	}
+			
+	.menu {
+		padding-top: 0px; float: right; min-width: 75%; position: relative; top: -5px; display: block; margin-top: 1em; margin-bottom: 1em;
+	}
+ 
+	.menu a {
+		float: right; display: block; margin-left: 2%; margin-right: 2%; font-family: 'Raleway', sans-serif; font-size:18px;
+	}
+
+	.menu a:link {color:steelblue; text-decoration: none}
+	.menu a:visited {color:#37678E}
+	.menu a:hover {color:darkslateblue; box-shadow: 0px 2px 0px; background-color: #FFB93E}
+	.menu a:active {color:mediumslateblue}
+	
+	.menu .icon {
+		display: none;
+	}
+
+	.row .col-8 {
+		padding:15px; padding-left: 5%; padding-right: 5%;
+	}
+		
+	.lateral {
+   		background-color: #FFB52E; color:steelblue; padding:7.5%; font-size: 14px; margin-bottom: 25px; box-shadow: -3px 3px 7px #a8becb;
+	}
+
+	.catalog {
+		position: relative; height: 400px; width: 100%; overflow:hidden;
+	}
+
+	.flip-box {
+	  background-color: transparent; width: 100%; height: 400px; perspective: 750px;
+	}
+
+	.flip-catalog {
+	  position: relative; width: 100%; height: 100%; text-align: center; transition: transform 0.8s; transform-style: preserve-3d;
+	}
+
+	.flip-box:hover .flip-catalog {
+	  transform: rotateY(180deg);
+	}
+
+	.catalog, .catalog-back {
+	  position: absolute; width: 100%; height: 100%; -webkit-backface-visibility: hidden; backface-visibility: hidden;
+	}
+
+	.catalog-back {
+	  background-color: #396680;
+	  color: #FFB52E; padding: 25px; padding-top: 165px;
+	  transform: rotateY(180deg);  
+	}
+
+	.plain-link {
+		text-decoration: none; color: #FFB52E;
+	}
+
+	#imgCatalog{
+		height: 400px; position: absolute; left: 50%; transform: translate(-50%);
+	}
+	h1 {clear: both}
+	h2 {margin-top: 0px;}
+
+	p {line-height: 1.6;}
+
+	#almacen {
+		width: 100%; margin-top: 10px; margin-bottom: 20px;
+	}
+
+	.marcas {
+		text-align: center; position: relative; list-style: none; margin: 0px; padding: 0px;
+	}
+
+	.marcas img {
+		width: 33%; float: left; padding-left: 2%; padding-right: 2%;
+	}
+
+	.marcas img:hover {opacity: 75%}
+
+	embed {
+		width: 100%; height: 925px;
+	}
+
+	#catalogophone {display: none}
+
+	table {
+		width: 100%; margin-bottom: 5px;
+	}
+
+	td { 
+		padding-bottom: 5px; padding-top: 5px;
+	}
+
+	input {
+		box-shadow: 2px 2px 2px #CCC; border: solid 3px #4682B4; width: 100%; max-width: 250px; height: 25px; border-radius: 3px;
+	}
+
+	#borrar {max-width: 125px; height: 25px;}
+
+	#enviar {max-width: 200px; height: 25px;}
+
+	textarea {
+		width: 100%; height: 100px; box-shadow: 2px 2px 2px #CCC; border: solid 3px #4682B4; border-radius: 3px;
+	}
+
+	footer {
+		color:steelblue; background-color:#FFB52E; min-height:50px; height:auto; width: 100%; text-align: center; padding: 15px; margin: 0px;
+	}
+
+
+
+	@media only screen and (max-width: 990px) {
+    /* For mobile phones: */
+   		.catalog {
+			height: 300px;
+		}
+		
+		.flip-box {
+	  		height: 300px;
+		}
+		
+		.catalog-back {
+			padding-top: 100px;
+		}
+
+		#imgCatalog{
+			height: 300px;
+		}
+		
+		header {
+			font-size: 20px; padding-top: 5px;
+		}
+	}
+
+	@media only screen and (max-width: 768px) {
+    /* For mobile phones: */ /* hacer el menú hamburguesa */
+		body {
+			background-image: url("Images/Fondo2.jpg");
+		}
+		
+		#cabecera {
+			background-image: url("Images/Headershort.jpg"); background-repeat: no-repeat; background-size:contain; width: 100%; height: auto; margin-top: -1px; overflow: hidden;
+		}
+
+		#imgHeader{
+			width: 205%; 
+		}
+		
+		.menu a {display: none;}
+		
+		.menu a.icon {
+			float: right; display: block;
+		}
+		
+		.menu a:hover {box-shadow: 0px 0px}
+		.menu a.icon:visited {color: steelblue}
+		
+		.menu.responsive .icon {
+			position: absolute; padding: 0px; right: 0; top: 0; border: none; max-width: 30px;
+		}
+		.menu.responsive a {
+			float: none; display: block; position: relative; text-align: right; padding: 10px; top: 42px; width: 100%; background-color: #FFB52E; border-bottom: solid 2px white;
+		}
+		
+		#catalogoweb {display: none}
+		#catalogophone {display: block; width: 100%}
+		
+		.catalog {
+			height: 400px;
+		}
+
+		.flip-box {
+	  		height: 400px;
+		}
+		
+		.catalog-back {
+			padding-top: 165px;
+		}
+		
+		#imgCatalog{
+			height: 400px;
+		}
+	}
+
+	@media only screen and (max-width: 350px){
+   		.catalog {
+			height: 300px;
+		}		
+		
+		.flip-box {
+	  		height: 300px;
+		}
+		
+		.catalog-back {
+			padding-top: 100px;
+		}
+		
+		#imgCatalog{
+			height: 300px;
+		}
+	}	

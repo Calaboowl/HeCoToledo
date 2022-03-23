@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es-ES"> 
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="venta, helados, congelados" />
+		<meta name="description" content="Proveedor de productos alimenticios" /> 
+		<link href="columnas.css" type="text/css" rel="stylesheet">
+		<link href="style.css" type="text/css" rel="stylesheet">
+		<link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico" sizes="16x16 24x24 36x36 48x48">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- revisar <script src="archivo.js" type="text/javascript"></script> */-->
+		<title>HeCoToledo</title>
+	</head>
+
+	<body>
+		
+		<div id="cabecera"><img id="imgHeader" src="Images/Header.jpg" alt="Logo Hecotoledo"></div>
+		
+		<header>
+			<h1 class="menu_title"><strong>HeCoToledo</strong></h1>
+		
+			<div class="menu" id="menuResp">
+				<a href="Pages/Catalogo.html">Catálogo</a>
+				<a href="Pages/Contacto.html">Contacto</a>
+				<a href="Pages/Empresas.html">Empresas</a>
+				<a href="Index.html" style="font-weight: bold; font-style: italic">Sobre nosotros</a>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+			</div>
+		</header> <br>
+
+		<div class="row">
+
+			<div class="col-8" id="SobreNosotros">
+				<div>
+					<h1 style="margin-top: 0px">Quiénes somos</h1>
+					<p>Somos una empresa toledana formada por un equipo de personas que busca ofrecer siempre lo mejor.
+					Trabajamos para los servicios hosteleros que necesiten un proveedor de productos alimenticios de confianza. HeCoToledo es una distribuidora de helados y congelados que ofrece un trato personalizado con visitas y disponibilidad de comunicación.
+					A diferencia de las distribuidoras especializadas y de marcas, nuestro proyecto ofrece un amplio catálogo de una gran variedad, con productos más naturales y caseros a la par que cómodos y rápidos de preparar.
+					<br><br>En HECOTOLEDO estamos dedicados a la distribución de productos alimentarios de calidad con 30 años de experiencia. 
+					<br><br>A tu servicio en Toledo y provincia.</p>
+					<img id="almacen" src="Images/Almacén.jpg" alt="Entrada al almacén">
+				</div>
+				
+				<div>
+					<h1>Con quién trabajamos</h1>
+				 	<p>Trabajamos con las mejores marcas del entorno para ofrecer los mejores productos.&nbsp;</p>
+					<p>Actualmente somos los distribuidores oficiales en Toledo de helados Nordwik, una empresa granadina que produce helado 100% Español con uno de los mejores graneles artesanos.
+					<br>También somos los distribuidores únicos de "Pan Rústico" en la provincia, de la marca madrileña "El Horno de Santos".</p>
+                </div>
+			</div>
+
+			<div class="col-4">
+				<div class="lateral">
+					<div>
+						<h2>Dónde estamos</h2>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3062.0673645316333!2d-3.953003710940809!3d39.87272894346171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6a09aa004c80b7%3A0xfc0f0c646bc177a9!2sHeCoToledo%20Helados%20NORDWIK%2C%20Quesos%20CORCUERA%2C%20FRIMANCHA!5e0!3m2!1sen!2ses!4v1612570478553!5m2!1sen!2ses" style="border:0;  width: 100%; height:400px;" allowFullScreen aria-hidden="false" tabindex="0">
+						</iframe> 
+					</div> <br><br>
+					<div>
+						<h2>Catálogo</h2>
+						
+						<div class="flip-box">
+  							<div class="flip-catalog">
+								<div class="catalog"><a href="Content/CATALOGO_20_Completo.pdf" target="_blank"><img id="imgCatalog" src="Images/Productos.jpg" alt="Secciones del catálogo"></a></div>
+								<div class="catalog-back"><a class="plain-link" href="Content/CATALOGO_20_Completo.pdf" target="_blank"><h2>Aquí puedes descargar nuestro catálogo completo</h2></a></div>
+  							</div>
+						</div>
+					
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	
+		
+	<footer>HecoToledo, 2021 © Carmen Bueno Iglesias</footer>
+	
+	<script>
+	function myFunction() {
+		var x = document.getElementById("menuResp");
+		if (x.className === "menu") {
+		x.className += " responsive";
+		} else {
+		x.className = "menu";
+		}
+	}
+	</script>
+		
+	</body>
+	
+</html>
