@@ -1,2 +1,2 @@
 # HeCoToledo
- Website for HeCoToledo
+ Website for the company HeCoToledo
