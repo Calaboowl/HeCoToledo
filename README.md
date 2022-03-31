@@ -1,2 +1,0 @@
-# HeCoToledo
- Website for HeCoToledo
